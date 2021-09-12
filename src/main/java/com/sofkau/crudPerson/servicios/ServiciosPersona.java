@@ -22,7 +22,7 @@ public class ServiciosPersona implements InterfaceServiciosPersona {
 
     @Override
     public Optional<Persona> listarId(int id) {
-        return Optional.empty();
+        return  data.findAllById(id);;
     }
 
 
@@ -33,7 +33,7 @@ public class ServiciosPersona implements InterfaceServiciosPersona {
 
     @Override
     public void borrar(int id) {
-
+        data.deleteById(id);
     }
 
     @Override
