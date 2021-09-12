@@ -36,6 +36,11 @@ public class ControladorPersona {
 
     }
 
+    @PutMapping(value = "/actualizarPersona")
+    public Persona actualizarPersona(@RequestBody Persona persona){
+        return servicio.actualizar(persona);
+    }
+
 
 
 
